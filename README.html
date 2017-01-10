@@ -36,7 +36,7 @@
 
 <h1 align="center"><font color="#0000FF" face="Courier New">Instructions for 
 Installing the AHEAD Tool Suite (ATS)</font></h1>
-<p align="left"><font face="Courier New">This is release v2012.01.05 of the 
+<p align="left"><font face="Courier New">This is release v2013.01.02 of the 
 ahead tool suite. There are different sets of instructions to follow for 
 different platforms. Here are your options:</font></p>
 <ul>
@@ -54,7 +54,7 @@ are known to have worked with AHEAD are in
 <span style="background-color: #FF0000">red</span>.&nbsp; We do not support 
 backward compatibility with previous versions of these tools.</font></p>
 <blockquote>
-  <p align="left"><font face="Courier New">1. JDK (<span style="background-color: #FF0000">1.7.0</span>) from <a href="http://java.sun.com/">
+  <p align="left"><font face="Courier New">1. JDK (<span style="background-color: #FF0000">1.7.0_10</span>) from <a href="http://java.sun.com/">
   http://java.sun.com/</a></font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Courier New">Don't forget to 
   download the J2SE documentation, too.</font></p>
@@ -67,7 +67,7 @@ backward compatibility with previous versions of these tools.</font></p>
   <font face="Courier New">Note: when you install cygwin, make sure that you 
   install gcc so that you can run the model checker tool of modelexplorer.</font></span></p>
   </blockquote>
-  <p align="left"><font face="Courier New">3. Ant (<span style="background-color: #FF0000">1.8.2</span>) from
+  <p align="left"><font face="Courier New">3. Ant (<span style="background-color: #FF0000">1.8.4</span>) from
   <a href="http://jakarta.apache.org/ant/">http://jakarta.apache.org/ant/</a></font></p>
 </blockquote>
 <p align="left"><font face="Courier New">Now, make sure that you have included 
@@ -81,14 +81,14 @@ already done steps 1-3).</font></p>
 <blockquote>
   <p align="left"><font face="Courier New">1. Change directory to where you'd 
   like to install the suite. The installation will create a sub-directory named 
-  ahead-v2012.01.05 which will contain the distribution.<br>
+  ahead-v2013.01.02 which will contain the distribution.<br>
   <br>
   2. Unpack the file that you downloaded, i.e., </font></p>
   <blockquote>
-    <p align="left"><font face="Courier New">&nbsp;&gt; unzip ahead-v2012.01.05.zip</font></p>
+    <p align="left"><font face="Courier New">&nbsp;&gt; unzip ahead-v2013.01.02.zip</font></p>
   </blockquote>
   <p align="left"><font face="Courier New">3. You should now have a 
-  sub-directory named ahead-v2012.01.05 and it should contain the following files and 
+  sub-directory named ahead-v2013.01.02 and it should contain the following files and 
   sub-directories:</font></p>
   <blockquote>
     <p align="left"><font face="Courier New">build/bin .... a directory with 
@@ -101,11 +101,11 @@ already done steps 1-3).</font></p>
     (this directory is presently empty)<br>
     miscellaneous. a directory in which to place other things;<br>
     README.html .. a copy of this file;<br>
-    setperms ..... a script to set file permissions in ahead-v2012.01.05.</font></p>
+    setperms ..... a script to set file permissions in ahead-v2013.01.02.</font></p>
   </blockquote>
   <p align="left"><font face="Courier New">4. On Linux installations, change the permissions on your installation as follows:</font></p>
   <blockquote>
-    <p align="left"><font face="Courier New">sh ahead-v2012.01.05/setperms</font></p>
+    <p align="left"><font face="Courier New">sh ahead-v2013.01.02/setperms</font></p>
   </blockquote>
   <p align="left"><font face="Courier New">6. Follow the instructions on either
   <a href="#Windows Scripts">Windows Scripts</a> or <a href="#Linux Scripts">
@@ -115,7 +115,7 @@ already done steps 1-3).</font></p>
 </blockquote>
 <p align="left"><font face="Courier New">In order to run the &quot;ahead&quot; tools, 
 your PATH (or, on Windows, Path) setting must include the bin sub-directory from 
-your ahead-v2012.01.05 installation, as well as the paths for the pre-requisite software. 
+your ahead-v2013.01.02 installation, as well as the paths for the pre-requisite software. 
 If this is the case, you're ready to go!<br>
 <br>
 We strongly recommend reading the documentation in the docs sub-directory! A 
@@ -137,10 +137,10 @@ distributions of CYGWIN</span>.</font></p>
   rem ---- your environment. </font></p>
   <p align="left"><font face="Courier New">
   <span style="background-color: #FFFF00">set WIN_HOME=C:\WINDOWS\system32<br>
-  set JAVA_HOME=C:\Program Files\Java\jdk1.7.0<br>
+  set JAVA_HOME=C:\Program Files\Java\jdk1.7.0_10<br>
   set CYGWIN_HOME=C:\bin\cygwin<br>
-  set AHEAD_HOME=C:\Java\ahead-v2012.01.05<br>
-  set ANT_HOME=C:\Java\apache-ant-1.8.2<br>
+  set AHEAD_HOME=C:\Java\ahead-v2013.01.02<br>
+  set ANT_HOME=C:\Java\apache-ant-1.8.4<br>
 	</span>
   <span class="style2">set CYGWIN=nodosfilewarning</span></font></p>
 	<p align="left">&nbsp;</p>
@@ -260,9 +260,9 @@ above changes, it won't otherwise:</span></font></p>
   <p align="left"><font face="Courier New">#!/bin/sh/</font><p align="left">
 	<font face="Courier New"># ---- please set the correct paths 
     on the variables below</font><p align="left"><font face="Courier New">
-	<span style="background-color: #FFFF00">export JAVA_HOME=/usr/local/jdk1.7.0<br>
+	<span style="background-color: #FFFF00">export JAVA_HOME=/usr/local/jdk1.7.0_10<br>
     export AHEAD_HOME=/usr/local/ahead<br>
-    export ANT_HOME=/usr/local/apache-ant-1.8.2</span><br>
+    export ANT_HOME=/usr/local/apache-ant-1.8.4</span><br>
 	<br>
     # ---- the following is preset<br>
 	<span style="background-color: #FFFFFF">export JCC_HOME=${AHEAD_HOME}/miscellaneous/javacc</span><br>

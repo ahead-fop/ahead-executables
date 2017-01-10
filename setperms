@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-chmod -R u+r,go-w ahead-v2012.01.05
-chmod -R u+x ahead-v2012.01.05/build/bin
-# chmod -R u+x ahead-v2012.01.05/fsats/bin
-chmod u+x ahead-v2012.01.05/setperms
+chmod -R u+r,go-w ahead-v2013.01.02
+chmod -R u+x ahead-v2013.01.02/build/bin
+# chmod -R u+x ahead-v2013.01.02/fsats/bin
+chmod u+x ahead-v2013.01.02/setperms
