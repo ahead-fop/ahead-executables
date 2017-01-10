@@ -1,0 +1,1 @@
+@env -- jak2java %*

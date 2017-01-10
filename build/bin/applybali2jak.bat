@@ -1,0 +1,1 @@
+@env -- applybali2jak %*
